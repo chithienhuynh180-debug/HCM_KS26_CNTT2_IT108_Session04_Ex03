@@ -1,0 +1,16 @@
+báo cáo phân tích
+
+đường dẫn tuyệt đối ghi từ ổ đĩa, vd C:\Users\thien\shopee-lite\assets\logo.png. sang máy khác ko có đúng đường dẫn đó nên báo FileNotFoundError.
+
+ipo. input là ngdung mở app, cpu nạp code vs ảnh từ storage vào ram. process là cpu lấy dữ liệu trg ram để xử lý. output là hiện giao diện vs logo lên màn hình.
+
+giải pháp kỹ thuật
+
+dấu . là thư mục hiện tại, dấu .. là thư mục cha.
+trg main.py viết ./assets/logo.png
+trg src/app.py viết ../assets/logo.png
+
+giảm lag
+1. mở task manager, xem app nào ăn nhiều ram.
+2. end task app ko cần.
+3. tắt app tự chạy ở tab startup rồi khởi động lại máy.
